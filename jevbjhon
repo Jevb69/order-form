@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<style>
+body {
+	background-image: url('burger.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+body {
+        font-family: sans-serif;
+      }
+ nav {
+        color: white;
+        font-size: 40px;
+      }
+.table {
+       
+        padding: 1rem;
+        border-radius: 8px;
+        border-collapse: collapse;
+        color: solid black;
+      
+      }
+.button {
+        margin: 0.5rem 0;
+        padding: 0.5rem;
+        border-radius: 4px;
+        font-family: inherit;
+        font-size: 2rem;
+        color: white;
+        cursor: pointer;
+    }
+
+ .container {
+        width: 100%;
+        max-width: 770px;
+      }
+.total{
+        margin-right: auto;
+        margin-left: auto;
+        text-align: center;
+      }
+
+</style>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Order Form</title>
+	<link rel="stylesheet" type="text/css" href="Order Form css.css">
+
+</head>
+<body>
+		<nav class="nav">
+      <h1><center>Mama Mo Burger</center></h1>
+    </nav>
+			<h1><center><u><b>Order Form</b></u></center></h1>
+		
+		<div id="order-form">
+			<div class="container">
+			<h1>
+				<small>Customer</small>
+			</h1>
+			
+					<form action="/action_page.php" method="get">
+						<div>
+						<label for="Order-Date" id="custom1" ><big><strong>Order Date:</strong></big></label>
+  							<input type="Date" id="custom1" name="Order-Date" placeholder="MM/DD/YYYY" required /><br>
+  						
+  						<label for="Order-Number"><big><strong>Order Number:</label>
+  							<input type="number" name="Order-Number" placeholder="00000" class="leftoright" required /><br>
+						
+					
+			</div>
+					
+						
+						<label for="customer-name">Customer Name:</label>				
+							<input type="text" name="customer-name" placeholder="Last Name" style="width: 145px;" required>
+							<input type="text" name="customer-name" placeholder="Firsts Name" style="width: 145px;" required><br>
+						
+						<label for="Address"> Address:</label>					
+							<input type="" name="Address" placeholder="Street, City, Region," style="width: 365px;" required><br>
+						
+						<label for="contact-name">Contact Name:</label>					
+							<input type="text" name="contact-name" placeholder="Last Name" style="width: 150px;" required>
+							<input type="text" name="contact-name" placeholder="Firsts Name" style="width: 155px;" required><br>
+						
+						<label for="phone"> Phone:</label>					
+							<input type="" placeholder="00-XXXX-YYYY" name="phone">
+						<label for="Mobile"> Mobile:</label>					
+							<input type="" name="Mobile" placeholder="(+63)000 000 0000" style="width:155px" required><br>
+						
+						<label for="email-address"> Email Address:</label>					
+							<input type="email" name="email-address" placeholder="Juan@email.com" style="width:315px" required><br>
+
+				
+
+			
+				<h1><small>Product to Order</small></h1>
+					
+					<table class="table">
+						<thead>
+							<th>Unit</th>
+							<th>Quantity</th>
+							<th>Product Code</th>
+							<th>Description</th>
+							<th>Unit Price</th>
+							<th>Total Price</th>
+						</thead>
+						<tr>
+							<td><input type="number" name="unit" style="width:50px"></td>
+							<td>
+								<select id="unit">
+								<option>000000</option>
+  								<option>1</option>
+  								<option>2</option>
+  								<option>3</option>
+  								<option>4</option>
+  								<option>5</option>
+								</select>
+								</td>
+							<td><input type="text" name="product-code" style="width:200px"></td>
+							<td><input type="text" name="description" style="width:350px"></td>
+							<td><input type="number" name="unit-price" style="width:100px"></td>
+							<td><input type="number" name="total-price" style="width:100px"></td>
+						</tr><tr>
+							<td><input type="number" name="unit" style="width:50px"></td>
+							<td>
+								<select id="unit">
+								<option>000000</option>
+  								<option>1</option>
+  								<option>2</option>
+  								<option>3</option>
+  								<option>4</option>
+  								<option>5</option>
+								</select>
+								</td>
+							<td><input type="text" name="product-code" style="width:200px"></td>
+							<td><input type="text" name="description" style="width:350px"></td>
+							<td><input type="number" name="unit-price" style="width:100px"></td>
+							<td><input type="number" name="total-price" style="width:100px"></td>
+						</tr><tr>
+							<td><input type="number" name="unit" style="width:50px"></td>
+							<td>
+								<select id="unit">
+								<option>000000</option>
+  								<option>1</option>
+  								<option>2</option>
+  								<option>3</option>
+  								<option>4</option>
+  								<option>5</option>
+								</select>
+								</td>
+							<td><input type="text" name="product-code" style="width:200px"></td>
+							<td><input type="text" name="description" style="width:350px"></td>
+							<td><input type="number" name="unit-price" style="width:100px"></td>
+							<td><input type="number" name="total-price" style="width:100px"></td>
+						</tr>
+					</table>
+					<div class="total"><label for="total"> Total:</label>
+					<input type="number" name="total" placeholder="0,00 Pesos" style="width:315px" class=".custom1" required><br></div>
+							 <div class="button">
+						<button type="submit" value="Submit">Submit</button>
+  						<button type="reset" value="Reset">Reset</button>
+  						</div>
+  					</div>
+			
+			</div>
+</body>
+</html>
